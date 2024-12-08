@@ -1,0 +1,29 @@
+.parent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -100px;
+  row-gap: 50px;
+  padding: 20px;
+}
+
+.child1 {
+  display: flex; /* Flex container for child11, child12, and child13 */
+  flex-direction: row; /* Horizontal alignment of children */
+  justify-content: space-between; /* Optional: Adjust spacing */
+  align-items: stretch; /* Children stretch to fill height */
+  width: 100%;
+  height: 300px;
+  margin-top: 10px;
+}
+
+.child11, .child12, .child13 {
+  flex: 1; /* Take equal space */
+  display: flex; /* Flex container for children */
+  flex-direction: column; /* Stack children vertically */
+  justify-content: start; /* Center children vertically */
+  align-items: center; /* Center children horizontally */
+  border: 1px solid rgb(228, 228, 228,0.5); /* For visualization */
+  margin: 0 5px; /* Optional spacing between siblings */
+}
+
